@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+# Script de personalizacion
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash  
