@@ -1,17 +1,21 @@
 #!/bin/bash
 
-# Actualiza los repositorios
+# Instalar snap
 sudo apt update
+sudo apt install snapd
 
-# Instala los paquetes deseados
-sudo apt install htop neofetch net-tools git curl gcc make -y
+# Configurar soft links para snapd
+sudo ln -s /var/lib/snapd/snap /snap
 
-# Instala nodejs
-sudo curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+# Instalar paquetes
+sudo apt install htop neofetch net-tools git curl gcc make
+
+# Instalar Node.js
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-# Instala npm
-sudo apt-get install -y npm
+# Instalar hello-world
+sudo snap install hello-world
 
-# Muestra la información del sistema con neofetch
-neofetch
+# Instalación completada
+echo "¡Instalación completada con éxito!"
