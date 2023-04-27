@@ -4,6 +4,8 @@
 sudo apt-get update
 sudo apt-get install -y zsh
 
+sudo apt install git
+
 # Cambiar la shell actual a Zsh
 chsh -s $(which zsh)
 
