@@ -21,7 +21,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 
 
 <h1 align="center">Hi 👋, I'm Jhon Daniel Olmedo Paco</h1>
-<h3 align="center">A passionate frontend Java with Spring, JavaScript witch Node.Js</h3>
+<h3 align="center">A passionate frontend Java with Spring, JavaScript with Node.Js</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
