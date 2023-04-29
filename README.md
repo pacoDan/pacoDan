@@ -20,6 +20,8 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash  
 ## script utils
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/utils.sh | bash  
+## docker sin sudo 
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/addUSerInDocker.sh | bash
 
 <h1 align="center">Hi 👋, I'm Jhon Daniel Olmedo Paco</h1>
 <h3 align="center">A passionate frontend Java with Spring, JavaScript with Node.Js</h3>
