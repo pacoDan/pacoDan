@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# Agregar usuario al grupo docker
+# Agregar el usuario al grupo docker
 sudo usermod -aG docker ${USER}
 
-# Cerrar sesión e iniciarla nuevamente
-exec su -l ${USER}
+# Cerrar y volver a iniciar sesión
+su - ${USER}
 
-# Confirmar membresía del grupo docker
+# Confirmar la membresía del grupo docker
+echo "El usuario ${USER} ahora pertenece a los grupos:"
 id -nG
