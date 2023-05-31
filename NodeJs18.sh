@@ -13,7 +13,7 @@ mv node-v18.16.0-linux-x64 ~/node18
 echo 'export PATH=$PATH:~/node18/bin' >> ~/.zshrc
 
 # Actualizar el PATH en la sesión actual
-source ~/.zshrc
+# source ~/.zshrc
 
 # Imprimir la versión de Node.js instalada
 node_version=$(node -v)
