@@ -20,6 +20,8 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash  
 ## script utils
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/utils.sh | bash  
+## instalacion de docker en ubuntu 22
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/installDockerInUbuntu22.sh | bash
 ## docker sin sudo 
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/addUserInDocker.sh | bash
 ## Node.Js 18 NodeJs18.sh
