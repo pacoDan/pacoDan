@@ -26,7 +26,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/installDockerInU
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/addUserInDocker.sh | bash
 ## Node.Js 18 NodeJs18.sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
-## conexiones remotas dentro de sql server
+## conexiones remotas dentro de sql server ok
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/conexiones_remotas_sql_server.sh | bash
 [![Copiar línea de comando](https://img.shields.io/badge/Copiar%20l%C3%ADnea%20de%20comando-Clic%20aqu%C3%AD-blue.svg)](javascript:void(0); "onclick=copyToClipboard('curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/addUserInDocker.sh | bash')")
 
