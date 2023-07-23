@@ -4,8 +4,6 @@
 sudo apt update -y
 sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch
 
-sudo apt install -y git
-
 # Cambiar la shell actual a Zsh
 chsh -s $(which zsh)
 
