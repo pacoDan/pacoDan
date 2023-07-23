@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvador/?originalSubdomain=es 
 -->
 
-# Script de personalizacion
+# Script de personalizacion (ubuntu y debian)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
