@@ -16,9 +16,11 @@ EOF
 )
 
 # Determine the MOTD file location based on the user's home directory
-motd_file="$HOME/.motd"
+normal_user_motd_file="$HOME/.motd"
+root_user_motd_file="/root/.motd"
 
 # Write the new message to the user's MOTD file
-echo "$new_message" > "$motd_file"
+echo "$new_message" > "$normal_user_motd_file"
+sudo echo "$new_message" > "$root_user_motd_file"
 
-echo "New message of the day has been set for your user account!"
+echo "New message of the day has been set for your user account and root user!" 
