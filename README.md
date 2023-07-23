@@ -26,7 +26,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh |
 ```
 # Script de bienvenida de la terminal
 ```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_de_terminal.sh | bash
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_terminal.sh | bash
 ```
 # install miniconda ( ejecutar el sh, siempre revisar esto en la parte de instalacion https://docs.conda.io/en/main/miniconda.html )
 ```sh
