@@ -3,7 +3,7 @@
 # Instalar Zsh
 sudo apt-get update -y
 sudo apt-get install -y zsh
-sudo apt install -y --yes gcc make cmake xsel wl-clipboard ripgrep
+sudo apt install -y --yes gcc make cmake xsel wl-clipboard ripgrep unzip
 
 sudo apt install -y git
 
