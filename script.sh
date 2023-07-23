@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ask for the sudo password and extend the sudo timeout
+sudo -v
+
 # Instalar Zsh
 sudo apt update -y
 sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext g++
