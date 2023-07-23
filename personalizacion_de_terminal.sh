@@ -15,10 +15,10 @@ new_message=$(cat << "EOF"
 EOF
 )
 
-# Make sure to backup the original motd file
-sudo cp /etc/motd /etc/motd.backup
+# Determine the MOTD file location based on the user's home directory
+motd_file="$HOME/.motd"
 
-# Write the new message to the motd file
-echo "$new_message" | sudo tee /etc/motd
+# Write the new message to the user's MOTD file
+echo "$new_message" > "$motd_file"
 
-echo "New message of the day has been set!"
+echo "New message of the day has been set for your user account!"
