@@ -13,8 +13,10 @@ tar -xf node-v18.17.0-linux-x64.tar.xz
 # Mover la carpeta descomprimida a ~/node18
 mv node-v18.17.0-linux-x64 $install_dir
 
-# Agregar el directorio al PATH en el archivo .zshrc
-echo 'export PATH=$PATH:'$install_dir'/bin' >> $HOME/.zshrc
+# Agregar el directorio al PATH en el archivo .zshrc solo si no existe ya
+if [[ ! ":$PATH:" == *":$install_dir/bin:"* ]]; then
+    echo 'export PATH=$PATH:'$install_dir'/bin' >> $HOME/.zshrc
+fi
 
 # Actualizar el PATH en la sesión actual
 source $HOME/.zshrc
