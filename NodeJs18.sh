@@ -1,23 +1,27 @@
 #!/bin/bash
 
-# Descargar Node.js v18
-wget https://nodejs.org/dist/v18.16.0/node-v18.16.0-linux-x64.tar.xz
+# Directorio de destino para la instalación de Node.js
+install_dir="$HOME/node18"
+
+# Descargar Node.js v18.17.0 desde el sitio oficial en el directorio $HOME
+cd $HOME
+wget https://nodejs.org/dist/v18.17.0/node-v18.17.0-linux-x64.tar.xz
 
 # Descomprimir el archivo descargado
-tar -xf node-v18.16.0-linux-x64.tar.xz
+tar -xf node-v18.17.0-linux-x64.tar.xz
 
 # Mover la carpeta descomprimida a ~/node18
-mv node-v18.16.0-linux-x64 ~/node18
+mv node-v18.17.0-linux-x64 $install_dir
 
 # Agregar el directorio al PATH en el archivo .zshrc
-echo 'export PATH=$PATH:~/node18/bin' >> ~/.zshrc
+echo 'export PATH=$PATH:'$install_dir'/bin' >> $HOME/.zshrc
 
 # Actualizar el PATH en la sesión actual
-# source ~/.zshrc
+source $HOME/.zshrc
 
 # Imprimir la versión de Node.js instalada
 node_version=$(node -v)
-echo "Node.js v18 se ha instalado y configurado correctamente. Versión: $node_version"
+echo "Node.js v18.17.0 se ha instalado y configurado correctamente. Versión: $node_version"
 
 # Eliminar el archivo comprimido descargado
-rm node-v18.16.0-linux-x64.tar.xz
+rm node-v18.17.0-linux-x64.tar.xz
