@@ -32,6 +32,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_minicond
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
 ```
+# install Lunar Vim IDE (recordar instalar git make gcc etc etc )
+```sh
+https://www.lunarvim.org/es/docs/installation
+```
 ## script utils
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/utils.sh | bash  
 ## instalacion de docker en ubuntu 22 OK y despues ejecutar docker sin sudo
