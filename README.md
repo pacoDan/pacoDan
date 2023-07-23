@@ -17,7 +17,9 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 -->
 
 # Script de personalizacion
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash  
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
+```  
 ## script utils
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/utils.sh | bash  
 ## instalacion de docker en ubuntu 22 OK y despues ejecutar docker sin sudo
