@@ -24,6 +24,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_de_terminal.sh | bash
 ```
+# install nvim 
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
+```
 ## script utils
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/utils.sh | bash  
 ## instalacion de docker en ubuntu 22 OK y despues ejecutar docker sin sudo
