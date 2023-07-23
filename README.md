@@ -28,6 +28,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_miniconda.sh | bash
 ```
+# install node y npm
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
+```
 # install nvim develop (por lo tanto ultima version de nvim)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
