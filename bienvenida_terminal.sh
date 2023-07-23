@@ -1,6 +1,7 @@
 #!/bin/bash
 
-new_message=$(cat << "EOF"
+# Art ASCII del mensaje de bienvenida
+art_ascii=$(cat << "EOF"
      ____                                 ____
    / __ )__  _____  ____  ____ ______   / / /
   / __  / / / / _ \/ __ \/ __ `/ ___/  / / / 
@@ -15,12 +16,7 @@ new_message=$(cat << "EOF"
 EOF
 )
 
-# Determine the MOTD file location based on the user's home directory
-normal_user_motd_file="$HOME/.motd"
-root_user_motd_file="/root/.motd"
+# Agregar el arte ASCII al archivo .zshrc
+echo "$art_ascii" >> ~/.zshrc
 
-# Write the new message to the user's MOTD file
-echo "$new_message" > "$normal_user_motd_file"
-sudo cp "$normal_user_motd_file" "$root_user_motd_file"
-
-echo "New message of the day has been set for your user account and root user!"
+echo "Mensaje de bienvenida personalizado agregado al archivo .zshrc!"
