@@ -2,7 +2,7 @@
 
 # Instalar Zsh
 sudo apt update -y
-sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext
+sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext g++
 
 # Cambiar la shell actual a Zsh
 chsh -s $(which zsh)
