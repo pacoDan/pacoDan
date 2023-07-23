@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Instalar Zsh
-sudo apt-get update -y
-sudo apt-get install -y zsh
-sudo apt install -y --yes gcc make cmake xsel wl-clipboard ripgrep unzip
+sudo apt update -y
+sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch
 
 sudo apt install -y git
 
