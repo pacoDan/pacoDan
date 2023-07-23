@@ -10,4 +10,4 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 
 # Eliminar el archivo de instalación después de la instalación
-rm Miniconda3-latest-Linux-x86_64.sh
+# rm Miniconda3-latest-Linux-x86_64.sh
