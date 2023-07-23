@@ -24,7 +24,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_de_terminal.sh | bash
 ```
-# install miniconda (siempre revisar esto en la parte de instalacion https://docs.conda.io/en/main/miniconda.html )
+# install miniconda ( ejecutar el sh, siempre revisar esto en la parte de instalacion https://docs.conda.io/en/main/miniconda.html )
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_miniconda.sh | bash
 ```
