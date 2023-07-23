@@ -24,6 +24,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_de_terminal.sh | bash
 ```
+# install miniconda (siempre revisar esto en la parte de instalacion https://docs.conda.io/en/main/miniconda.html )
+```sh
+curl -sS https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh | bash
+```
 # install nvim develop (por lo tanto ultima version de nvim)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
