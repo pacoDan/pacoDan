@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Instalar Zsh
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install -y zsh
 
-sudo apt install git
+sudo apt install -y git
 
 # Cambiar la shell actual a Zsh
 chsh -s $(which zsh)
