@@ -16,7 +16,17 @@ art_ascii=$(cat << "EOF"
 EOF
 )
 
-# Agregar el arte ASCII al archivo .zshrc
-echo "$art_ascii" >> ~/.zshrc
+# Ruta del archivo .zshrc
+zshrc_file=~/.zshrc
 
-echo "Mensaje de bienvenida personalizado agregado al archivo .zshrc!"
+# Comprobar si el arte ASCII ya existe en el archivo .zshrc
+if grep -q "$art_ascii" "$zshrc_file"; then
+  echo "Mensaje de bienvenida ya existe en el archivo .zshrc. No se agregará nuevamente."
+else
+  # Eliminar el arte ASCII anterior (si existe)
+  sed -i '/^     ____                                 ____.*/,$d' "$zshrc_file"
+
+  # Agregar el arte ASCII al archivo .zshrc
+  echo "$art_ascii" >> "$zshrc_file"
+  echo "Mensaje de bienvenida personalizado agregado al archivo .zshrc!"
+fi
