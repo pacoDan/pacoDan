@@ -28,7 +28,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_miniconda.sh | bash
 ```
-# install node y npm
+# install node y npm lts 18
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
 ```
