@@ -20,11 +20,11 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
-# Script de bienvenida
+# Script de bienvenida de la terminal
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_de_terminal.sh | bash
 ```
-# install nvim develop
+# install nvim develop (por lo tanto ultima version de nvim)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
 ```
