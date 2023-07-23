@@ -32,7 +32,8 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_minicond
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
 ```
-# install Lunar Vim IDE (recordar instalar git make gcc etc etc )
+# install Lunar Vim IDE (recordar instalar git make gcc pip node etc etc )
+## https://www.rust-lang.org/tools/install
 ```sh
 https://www.lunarvim.org/es/docs/installation
 ```
