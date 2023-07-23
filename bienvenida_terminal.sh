@@ -19,12 +19,9 @@ fi
 if grep -q "$welcome_ascii_url" "$zshrc_file"; then
   echo "Mensaje de bienvenida ya existe en el archivo .zshrc. No se agregará nuevamente."
 else
-  # Eliminar el arte ASCII anterior (si existe)
-  sed -i '/^# Mensaje de bienvenida personalizado.*/,/^# Fin del mensaje de bienvenida personalizado./d' "$zshrc_file"
-
   # Agregar el arte ASCII al archivo .zshrc
-  echo "# Mensaje de bienvenida personalizado." >> "$zshrc_file"
   cat /tmp/welcome_ascii.txt >> "$zshrc_file"
+  echo "# Mensaje de bienvenida personalizado." >> "$zshrc_file"
   echo "# Fin del mensaje de bienvenida personalizado." >> "$zshrc_file"
 
   echo "Mensaje de bienvenida personalizado agregado al archivo .zshrc!"
