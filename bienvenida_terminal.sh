@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Ruta del archivo .zshrc
-zshrc_file=~/.zshrc
-
 # URL del archivo con el arte ASCII del mensaje de bienvenida
 welcome_ascii_url="https://raw.githubusercontent.com/pacodan/pacodan/main/ascii_bienvenida.txt"
 
 # Descargar el archivo welcome_ascii.txt
-wget -O /tmp/welcome_ascii.txt "$welcome_ascii_url"
+wget -O "$HOME/welcome_ascii.txt" "$welcome_ascii_url"
 
 # Verificar si la descarga del archivo fue exitosa
 if [ $? -ne 0 ]; then
@@ -15,17 +12,10 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Verificar si el arte ASCII ya existe en el archivo .zshrc
-if grep -q "$welcome_ascii_url" "$zshrc_file"; then
-  echo "Mensaje de bienvenida ya existe en el archivo .zshrc. No se agregará nuevamente."
-else
-  # Agregar el arte ASCII al archivo .zshrc
-  cat /tmp/welcome_ascii.txt >> "$zshrc_file"
-  echo "# Mensaje de bienvenida personalizado." >> "$zshrc_file"
-  echo "# Fin del mensaje de bienvenida personalizado." >> "$zshrc_file"
+# Agregar el comando para mostrar el arte ASCII al inicio del archivo .zshrc
+echo "cat ~/welcome_ascii.txt" >> ~/.zshrc
 
-  echo "Mensaje de bienvenida personalizado agregado al archivo .zshrc!"
-fi
+# Mostrar el arte ASCII en la terminal actual
+cat ~/welcome_ascii.txt
 
-# Eliminar el archivo temporal
-rm /tmp/welcome_ascii.txt
+echo "Mensaje de bienvenida personalizado agregado a la terminal y se mostrará cada vez que abras una nueva sesión de terminal!"
