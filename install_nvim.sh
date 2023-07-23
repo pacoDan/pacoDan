@@ -12,3 +12,5 @@ git checkout release-0.9
 # Compilar e instalar neovim
 make CMAKE_BUILD_TYPE=Release
 sudo make install
+cd
+git clone https://github.com/LunarVim/nvim-basic-ide.git ~/.config/nvim
