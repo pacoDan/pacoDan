@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Directorio de destino para la instalación de Node.js
 install_dir="$HOME/node18"
