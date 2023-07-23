@@ -20,6 +20,10 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
+## Script de personalizacion (Arch Linux)
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
+```
 # Script de bienvenida de la terminal
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizacion_de_terminal.sh | bash
