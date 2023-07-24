@@ -8,7 +8,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 if ! grep -q "zsh-autosuggestions" ~/.zshrc; then
     # Si no existe, lo agregamos a la lista de plugins
     echo "Agregando zsh-autosuggestions a la lista de plugins en ~/.zshrc..."
-    echo 'plugins+=(zsh-autosuggestions)' >> ~/.zshrc
+    sed -i '/^plugins=/ s/)$/ zsh-autosuggestions)/' ~/.zshrc
 else
     echo "El plugin zsh-autosuggestions ya está configurado en ~/.zshrc."
 fi
