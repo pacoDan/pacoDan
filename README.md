@@ -28,6 +28,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh |
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_terminal.sh | bash
 ```
+## plugins 🔨 para zsh y git
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizar_zsh.sh | bash
+```
 # install miniconda ( ejecutar el sh, siempre revisar esto en la parte de instalacion https://docs.conda.io/en/main/miniconda.html )
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_miniconda.sh | bash
