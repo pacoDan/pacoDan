@@ -1,12 +1,16 @@
 #!/bin/bash
 
-# Instalar zsh-syntax-highlighting
+# Instalar zsh-syntax-highlighting si no está instalado
 echo "Instalando zsh-syntax-highlighting..."
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
 
-# Instalar zsh-autosuggestions
+# Instalar zsh-autosuggestions si no está instalado
 echo "Instalando zsh-autosuggestions..."
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
 
 # Configurar plugins en ~/.zshrc
 echo "Configurando plugins en ~/.zshrc..."
@@ -29,8 +33,6 @@ done
 
 echo ")" >> ~/.zshrc
 
-# Asegurarse de que esté presente la línea 'source $ZSH/oh-my-zsh.sh'
-if ! grep -q "source $ZSH/oh-my-zsh.sh" ~/.zshrc; then
-    echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
-fi
-
+# Reiniciar la terminal
+echo "Reiniciando la terminal..."
+exec zsh
