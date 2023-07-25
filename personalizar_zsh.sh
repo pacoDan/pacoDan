@@ -14,24 +14,10 @@ fi
 
 # Configurar plugins en ~/.zshrc
 echo "Configurando plugins en ~/.zshrc..."
-plugins_line="plugins=("
+plugins_line="plugins=(git zsh-syntax-highlighting zsh-autosuggestions)"
 if ! grep -q "$plugins_line" ~/.zshrc; then
     echo "$plugins_line" >> ~/.zshrc
 fi
-
-plugins_to_add=(
-    "git"
-    "zsh-syntax-highlighting"
-    "zsh-autosuggestions"
-)
-
-for plugin in "${plugins_to_add[@]}"; do
-    if ! grep -q "$plugin" ~/.zshrc; then
-        sed -i "s/\(plugins=([^)]*\))/\1 $plugin/" ~/.zshrc
-    fi
-done
-
-echo ")" >> ~/.zshrc
 
 # Reiniciar la terminal
 echo "Reiniciando la terminal..."
