@@ -1,11 +1,15 @@
 #!/bin/bash
 
-# Install zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Install zsh-autosuggestions if not already installed
+if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
 
-# Install fzf with automatic confirmations
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install --all --key-bindings --no-update-rc
+# Install fzf if not already installed
+if [ ! -d ~/.fzf ]; then
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install --all --key-bindings --no-update-rc
+fi
 
 # Update the zshrc file with the desired plugins
 if ! grep -q "plugins=(" ~/.zshrc; then
