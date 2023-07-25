@@ -11,9 +11,9 @@ if [ ! -d ~/.fzf ]; then
   ~/.fzf/install --all --key-bindings --no-update-rc
 fi
 
-# Update the zshrc file with the desired plugins
+# Add zsh-autosuggestions to the list of plugins if not already present
 if ! grep -q "zsh-autosuggestions" ~/.zshrc; then
-  sed -i '/^plugins=(/ s/)$/ zsh-autosuggestions)/' ~/.zshrc
+  sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' ~/.zshrc
 fi
 
 echo "Plugin zsh-autosuggestions has been installed and added to your ~/.zshrc file."
