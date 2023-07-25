@@ -7,7 +7,7 @@ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 
 # Ejecutar el script de instalación de Miniconda
-./Miniconda3-latest-Linux-x86_64.sh
+#./Miniconda3-latest-Linux-x86_64.sh
 
 # Eliminar el archivo de instalación después de la instalación
 # rm Miniconda3-latest-Linux-x86_64.sh
