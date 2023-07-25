@@ -12,8 +12,8 @@ if [ ! -d ~/.fzf ]; then
 fi
 
 # Update the zshrc file with the desired plugins
-if ! grep -q "plugins=(" ~/.zshrc; then
-  sed -i '/^plugins=(/a \ \ zsh-autosuggestions\n)' ~/.zshrc
+if ! grep -q "zsh-autosuggestions" ~/.zshrc; then
+  sed -i '/^plugins=(/ s/)$/ zsh-autosuggestions)/' ~/.zshrc
 fi
 
 echo "Plugin zsh-autosuggestions has been installed and added to your ~/.zshrc file."
