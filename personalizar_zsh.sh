@@ -27,13 +27,10 @@ for plugin in "${plugins_to_add[@]}"; do
     fi
 done
 
+echo ")" >> ~/.zshrc
+
 # Asegurarse de que esté presente la línea 'source $ZSH/oh-my-zsh.sh'
 if ! grep -q "source $ZSH/oh-my-zsh.sh" ~/.zshrc; then
     echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
 fi
 
-echo "Se ha configurado correctamente el archivo ~/.zshrc con los plugins."
-
-# Reiniciar la terminal
-echo "Reiniciando la terminal..."
-exec zsh
