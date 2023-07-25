@@ -6,11 +6,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Instalar zsh-autosuggestions
 echo "Instalando zsh-autosuggestions..."
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# Instalar fzf y responder automáticamente "y" a las preguntas
-echo "Instalando fzf..."
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && yes | ~/.fzf/install
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Configurar plugins en ~/.zshrc
 echo "Configurando plugins en ~/.zshrc..."
@@ -31,7 +27,10 @@ for plugin in "${plugins_to_add[@]}"; do
     fi
 done
 
-echo ")" >> ~/.zshrc
+# Asegurarse de que esté presente la línea 'source $ZSH/oh-my-zsh.sh'
+if ! grep -q "source $ZSH/oh-my-zsh.sh" ~/.zshrc; then
+    echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
+fi
 
 echo "Se ha configurado correctamente el archivo ~/.zshrc con los plugins."
 
