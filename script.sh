@@ -4,7 +4,7 @@
 if sudo -n true; then
   # Si sudo no requiere una contraseña, actualizar sin solicitar contraseña
   sudo apt update -y
-  sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext g++
+  sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext g++ tree
 else
   # Si sudo requiere una contraseña, solicitarla al principio
   read -sp "Ingresa tu contrasena de sudo: " contrasena_sudo
