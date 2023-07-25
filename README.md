@@ -32,7 +32,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_termi
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizar_zsh.sh | bash
 ```
-# install miniconda ( ejecutar el sh, siempre revisar esto en la parte de instalacion https://docs.conda.io/en/main/miniconda.html )
+# install miniconda 🐍 manualmente (revisar siempre https://docs.conda.io/en/main/miniconda.html )
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_miniconda.sh | bash
 ```
