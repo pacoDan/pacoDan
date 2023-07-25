@@ -8,7 +8,7 @@ fi
 # Install fzf if not already installed
 if [ ! -d ~/.fzf ]; then
   git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-  ~/.fzf/install --all --key-bindings --no-update-rc
+  yes | ~/.fzf/install --all --key-bindings --no-update-rc
 fi
 
 # Add zsh-autosuggestions to the list of plugins if not already present
