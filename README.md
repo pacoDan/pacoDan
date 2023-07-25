@@ -40,7 +40,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_minicond
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
 ```
-# install de dotnet
+# install de dotnet ok
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotnet_6.sh | bash
 ```
