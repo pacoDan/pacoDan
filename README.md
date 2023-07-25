@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvador/?originalSubdomain=es 
 -->
 
-# Script de personalizacion (ubuntu y debian)
+# Script de personalizacion (ubuntu y debian) ok
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
@@ -28,7 +28,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh |
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_terminal.sh | bash
 ```
-## plugins 🔨 para zsh y git
+## plugins 🔨 para zsh y git ok
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizar_zsh.sh | bash
 ```
