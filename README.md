@@ -24,7 +24,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
 ```
-# Script de bienvenida de la terminal
+## Script de bienvenida de la terminal
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_terminal.sh | bash
 ```
@@ -39,6 +39,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_minicond
 # install node y npm lts 18
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
+```
+# install de dotnet
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotnet_6.sh | bash
 ```
 # install nvim develop (por lo tanto ultima version de nvim)
 ```sh
