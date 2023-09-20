@@ -44,6 +44,10 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | ba
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotnet_6.sh | bash
 ```
+# install de dotnet 7 ok
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotnet_7.sh | bash
+```
 ## install docker en ubutnu 22.04 (solo en root, añadir el usuario con otro script)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/installDockerInUbuntu22_04.sh | bash
