@@ -15,12 +15,17 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvador/?originalSubdomain=es 
 -->
-
 # Script de personalizacion (ubuntu y debian) ok
+```sh
+sudo apt install -y --yes zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext g++ tree
+```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
 ## Script de personalizacion (Arch Linux)
+```sh
+sudo pacman -S --noconfirm zsh gcc make cmake xsel wl-clipboard ripgrep unzip neofetch screenfetch gettext
+```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
 ```
@@ -34,7 +39,12 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizar_zsh
 ```
 ## install miniconda 🐍 manualmente ok (revisar siempre https://docs.conda.io/en/main/miniconda.html )
 ```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_miniconda.sh | bash
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
 ```
 # install node y npm lts 18 ok
 ```sh
