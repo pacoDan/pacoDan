@@ -29,11 +29,11 @@ sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
 ```
-# install nvim desde github (por lo tanto ultima version de nvim)
+# install nvim desde github (por lo tanto ultima version de nvim) EN ROOT
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
 ```
-### instalacion + rapida de nvim
+### instalacion + rapida de nvim EN ROOT
 ```sh
 apt update && apt upgrade && apt install curl git && curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim_instalable.sh | bash
 ```
