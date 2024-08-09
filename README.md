@@ -35,7 +35,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh 
 ```
 ### instalacion + rapida de nvim
 ```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim_instalable.sh | bash
+apt update && apt upgrade && apt install curl git && curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim_instalable.sh | bash
 ```
 ## Script de bienvenida de la terminal
 ```sh
