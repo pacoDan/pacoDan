@@ -1,5 +1,5 @@
 #!/bin/bash
-
+apt update && apt upgrade && apt install git curl
 # Directorio donde se instalará Neovim
 INSTALL_DIR="/root/.desarrollo/nvim-latest"
 
