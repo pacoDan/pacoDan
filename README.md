@@ -33,6 +33,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh |
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
 ```
+### instalacion + rapida de nvim
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim_instalable.sh | bash
 ```
