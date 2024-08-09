@@ -32,6 +32,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh |
 # install nvim desde github (por lo tanto ultima version de nvim)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim_instalable.sh | bash
 ```
 ## Script de bienvenida de la terminal
 ```sh
