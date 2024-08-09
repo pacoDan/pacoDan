@@ -29,6 +29,10 @@ sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
 ```
+# install nvim desde github (por lo tanto ultima version de nvim)
+```sh
+curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
+```
 ## Script de bienvenida de la terminal
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_terminal.sh | bash
@@ -61,10 +65,6 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotn
 ## install docker en ubutnu 22.04 (solo en root, añadir el usuario con otro script)
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/installDockerInUbuntu22_04.sh | bash
-```
-# install nvim develop (por lo tanto ultima version de nvim)
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
 ```
 # install Lunar Vim IDE ok (recordar instalar git make gcc pip node etc etc )
 ## https://www.rust-lang.org/tools/install
