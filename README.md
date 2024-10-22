@@ -24,7 +24,7 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
 ## Script de personalizacion (Arch Linux)
 ```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext gdb tree git curl wget xsel wl-clipboard ripgrep fd lazygit htop
+sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext gdb tree git curl wget xclip xsel wl-clipboard ripgrep fd lazygit htop openssh
 ```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
