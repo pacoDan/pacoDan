@@ -17,14 +17,14 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 -->
 # Script de personalizacion (ubuntu y debian) ok
 ```sh
-sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake unzip neofetch screenfetch gettext g++ tree gdb fd-find htop git curl xsel wl-clipboard ripgrep
+sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake unzip neofetch screenfetch gettext g++ tree gdb fd-find htop git curl xsel wl-clipboard ripgrep plank flameshot tilix
 ```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
 ## Script de personalizacion (Arch Linux)
 ```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext gdb tree git curl wget xclip xsel wl-clipboard ripgrep fd lazygit htop openssh
+sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext gdb tree git curl wget xclip xsel wl-clipboard ripgrep fd lazygit htop openssh docker plank flameshot gpaste tilix nemo dolphin docker-compose
 ```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
