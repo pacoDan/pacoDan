@@ -29,6 +29,13 @@ sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
 ```
+### docker sin sudo
+```sh
+sudo usermod -aG docker ${USER}
+sudo systemctl enable docker
+sudo systemctl restart docker
+newgrp docker
+```
 # install nvim desde github (por lo tanto ultima version de nvim) EN ROOT
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
