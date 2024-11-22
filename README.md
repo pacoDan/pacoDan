@@ -1,106 +1,408 @@
-### Hi there 👋
+#### 1)  Configuración de IKE. 
+“Internet Key Exchange” es un protocolo que define el método de intercambio de claves sobre IP en una primera fase de negociación segura. Está formado por una cabecera de autenticación (AH) o una cabecera de autenticación más cifrado (Encapsulating Security Payload o ESP).
+```
+conf t
+crypto isakmp policy 10
+encr AES
+authentication pre-share
+group 5 (Diffie-Hellman grupo 5 – clave de 1536 bits)
+lifetime 900 (tiempo de vida en segundos)
+exit
+```
+Notas técnicas:
+```pkg
+•  crypto isakmp policy 10: este comando crea la política ISAKMP número 10. Puede crear varias políticas,  por  ejemplo  7,  8,  9  con  una  configuración  diferente. Los  routers  que  participan  en  la negociación de la Fase 1 buscan la coincidencia de políticas ISAKMP con la lista de políticas una por una. Si alguna política coincide, la negociación de IPSec pasa a la Fase 2.
+•  encr AES: se utilizará el algoritmo AES para la fase 1.
+•  authentication pre-share: el método de autenticación es una clave pre-compartida.
+•  group 5: el grupo Diffie-Hellman que se utilizará es el 5 (grupo de 1536 bits).
+Los grupos Diffie-Hellman (DH) determinan la fuerza de la clave usada en el proceso de intercambio de claves. Los miembros de grupos más altos (DF 14, 15, 19 y 20)son más seguros, pero se necesita más tiempo para computar la clave. Ambos puntos en un intercambio de VPN deben usar el mismo grupo DH, que es negociado durante la Fase 1 del proceso de negociación de IPSec. Es ahí donde los dos puntos forman un canal seguro y autenticado que pueden usar para comunicarse.
+•  lifetime 900: tiempo de vida en segundos.
+```
 
-<!--
-**pacoDan/pacoDan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+##### Definición de una clave simétrica con el otro extremo del túnel:
+```
+crypto isakmp key cisco address 10.2.0.2
+```
+(La contraseña de la fase 1 es “cisco” y la dirección IP remota es 10.2.0.2)
 
-Here are some ideas to get you started:
+#### 2)  Configuración de IPSec modo túnel
+```
+crypto ipsec transform-set 50 ah-sha-hmac esp-3des
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvador/?originalSubdomain=es 
--->
-# Script de personalizacion (ubuntu y debian) ok
-```sh
-sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake unzip neofetch screenfetch gettext g++ tree gdb fd-find htop git curl xsel wl-clipboard ripgrep plank flameshot tilix
-```
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
-```
-## Script de personalizacion (Arch Linux)
-```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext gdb tree git curl wget xclip xsel wl-clipboard ripgrep fd lazygit htop openssh docker plank flameshot gpaste tilix nemo dolphin docker-compose timeshift redshift
-```
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
-```
-### docker sin sudo
-```sh
-sudo usermod -aG docker ${USER}
-sudo systemctl enable docker
-sudo systemctl restart docker
-newgrp docker
-```
-# install nvim desde github (por lo tanto ultima version de nvim) EN ROOT
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
-```
-### instalacion + rapida de nvim EN ROOT
-```sh
-apt update && apt upgrade && apt install curl git && curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim_instalable.sh | bash
-```
-## Script de bienvenida de la terminal
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/bienvenida_terminal.sh | bash
-```
-## plugins 🔨 para zsh y git ok
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/personalizar_zsh.sh | bash
-```
-## install miniconda 🐍 manualmente ok (revisar siempre https://docs.conda.io/en/main/miniconda.html )
-```sh
-mkdir -p ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
-~/miniconda3/bin/conda init bash
-~/miniconda3/bin/conda init zsh
-```
-# install node y npm lts 18 ok
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
-```
-# install de dotnet ok
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotnet_6.sh | bash
-```
-# install de dotnet 7 ok
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/instalacion_dotnet_7.sh | bash
-```
-## install docker en ubutnu 22.04 (solo en root, añadir el usuario con otro script)
-```sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/installDockerInUbuntu22_04.sh | bash
-```
-# install Lunar Vim IDE ok (recordar instalar git make gcc pip node etc etc )
-## https://www.rust-lang.org/tools/install
-## https://www.lunarvim.org/es/docs/installation
-
-## script utils
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/utils.sh | bash  
-## instalacion de docker en ubuntu 22 OK y despues ejecutar docker sin sudo
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/installDockerInUbuntu22.sh | bash
-## docker sin sudo 
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/addUserInDocker.sh | bash
-## Node.Js 18 NodeJs18.sh
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/NodeJs18.sh | bash
-## conexiones remotas dentro de sql server ok
-curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/conexiones_remotas_sql_server.sh | bash
-[![Copiar línea de comando](https://img.shields.io/badge/Copiar%20l%C3%ADnea%20de%20comando-Clic%20aqu%C3%AD-blue.svg)](javascript:void(0); "onclick=copyToClipboard('curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/addUserInDocker.sh | bash')")
+(Para listar las otras opciones de autenticación y encriptación utilice el comando crypto ipsec transform-set 50 ?)
 
 
-<h1 align="center">Hi 👋, I'm Jhon Daniel Olmedo Paco</h1>
-<h3 align="center">A passionate frontend Java with Spring, JavaScript with Node.Js</h3>
+---
+despues de conectarlas
+para armar el árbol de expansión, en el router DISTRIBUCION
+```
+spanning-tree vlan 1,10,20 root primary
+```
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://dev.to/jhonpaco" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="jhonpaco" height="30" width="40" /></a>
-</p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.haskell.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" alt="haskell" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> </p>
+
+**en Router1**, se configuran todas las ip de las vlan1, 10 y 20
+para que funcione las sub interfaces, no se configuro ninguna ip a la subinterfaz 0/0
+```
+interface fastEthernet 0/0
+no shutdown
+exit
+```
+
+##### encapsular la vlan con 8021Q, en este caso e la vlan1 pero así con las demás vlans en la interfaz Fa0/0  -> En Router1... para asociarlo con la vlan 1
+###### configuracion de la primera sub-interfaz, desde (config)
+```
+interface fastEthernet0/0.1
+encapsulation dot1Q 1
+ip address 10.50.0.1 255.255.0.0
+exit
+```
+
+###### configuracion de la segunda sub-interfaz, la de vlan 10, desde (config)
+```
+interface fastEthernet0/0.10
+encapsulation dot1Q 10
+ip address 10.10.0.1 255.255.0.0
+exit
+```
+###### configuracion de la tercera sub-interfaz, la de vlan 20, desde (config)
+```
+interface fastEthernet0/0.20
+encapsulation dot1Q 20
+ip address 10.20.0.1 255.255.0.0
+exit
+```
+
+ahora con show ip route se ven las interfaces configuradas
+
+
+-> hasta ahora aca todas las maquinas con distintas vlans se pingean
+
+ahora configuro las interfaces serial, desde (config)
+
+en Router 1
+```
+interface serial 0/0/1
+ip address 10.1.0.1 255.255.255.0
+no shutdown
+exit
+```
+
+después probar hacer show ip route 
+
+en Router1, para configurar el default rouer con el default gateway
+una ruta estatica
+```
+ip route 0.0.0.0 0.0.0.0 10.1.0.2 
+```
+```
+ip route 0.0.0.0 0.0.0.0 10.1.0.1
+exit
+```
+
+
+
+el objetivo de sumarizar redes es achicar la tabla de ruteo
+
+
+en Router2 para ver la configuracion si tiene eigrp 1
+
+se hace  en enable
+```
+show run
+```
+
+
+en Router1
+al hacer show ip route (en modo enable) ver el eigrp,
+ahora en modo config
+```
+router eigrp 1
+network 10.0.0.0
+exit
+```
+
+
+
+
+----
+para ver como esta armado el túnel
+primero  en Router2
+
+hacer  ```show run```
+luego de copiar su contenido, se parece a esto y copiarlo/comparar
+```
+Router2#show run
+
+Building configuration...
+
+Current configuration : 1331 bytes
+
+!
+
+version 12.4
+
+no service timestamps log datetime msec
+
+no service timestamps debug datetime msec
+
+no service password-encryption
+
+!
+
+hostname Router2
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+no ip cef
+
+no ipv6 cef
+
+!
+
+!
+
+!
+
+!
+
+crypto isakmp policy 10
+
+encr aes
+
+authentication pre-share
+
+group 5
+
+lifetime 900
+
+!
+
+crypto isakmp key cisco address 10.1.0.1
+
+!
+
+!
+
+!
+
+crypto ipsec transform-set 50 ah-sha-hmac esp-3des
+
+!
+
+crypto map mymap 10 ipsec-isakmp
+
+set peer 10.1.0.1
+
+set security-association lifetime seconds 1800
+
+set transform-set 50
+
+match address 101
+
+!
+
+!
+
+!
+
+!
+
+ip ssh version 1
+
+!
+
+!
+
+spanning-tree mode pvst
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+interface FastEthernet0/0
+
+ip address 10.4.0.1 255.255.255.0
+
+duplex auto
+
+speed auto
+
+!
+
+interface FastEthernet0/1
+
+ip address 10.3.0.1 255.255.255.0
+
+duplex auto
+
+speed auto
+
+!
+
+interface Serial0/0/0
+
+ip address 10.2.0.2 255.255.255.0
+
+crypto map mymap
+
+!
+
+interface Serial0/0/1
+
+no ip address
+
+clock rate 2000000
+
+shutdown
+
+!
+
+interface Serial0/1/0
+
+no ip address
+
+clock rate 2000000
+
+shutdown
+
+!
+
+interface Serial0/1/1
+
+no ip address
+
+clock rate 2000000
+
+shutdown
+
+!
+
+interface Vlan1
+
+no ip address
+
+shutdown
+
+!
+
+router eigrp 1
+
+network 10.0.0.0
+
+auto-summary
+
+!
+
+ip classless
+
+!
+
+ip flow-export version 9
+
+!
+
+!
+
+access-list 101 permit ip 10.4.0.0 0.0.0.255 10.10.0.0 0.0.255.255
+
+!
+
+no cdp run
+
+!
+
+!
+
+!
+
+!
+
+!
+
+!
+
+line con 0
+
+!
+
+line aux 0
+
+!
+
+line vty 0 4
+
+login
+
+!
+
+!
+
+!
+
+end
+```
+
+
+
+
+ en  Router 1, modo (conf t)
+```
+conf t
+crypto isakmp policy 10
+encr AES
+authentication pre-share
+group 5 
+lifetime 900
+exit
+crypto isakmp key cisco address 10.2.0.2
+crypto ipsec transform-set 50 ah-sha-hmac esp-3des
+crypto map mymap 10 ipsec-isakmp
+set peer 10.2.0.2
+set transform-set 50
+match address 101
+exit
+interface Serial0/0/1
+crypto map mymap
+exit
+access-list 101 permit ip  10.10.0.0 0.0.255.255 10.4.0.0 0.0.0.255
+```
+
+
+en el Router1 para una lista de control de accesos (modo config)
+la lista de control de accesos la 102 que tiene que permitir el trafico de la red 10.20 a la red 10.3, tiene que ser una interfaz de entrada, por que entra el trafico al router
+```
+access-list 102 permit ip 10.20.0.0 0.0.255.255 10.3.0.0 0.0.2.255
+interface fastEthernet 0/0.20
+ip access-group 102 in
+exit
+```
+de esta forma lo que no esta permitido, va estar denegado, no va a tener otro trafico
+
+
+ quedaría mas o menos parecido asi:
+ ![[TL 4 Pasted image 20241122132245.png]]
+ 
