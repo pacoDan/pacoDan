@@ -1,6 +1,37 @@
-- [Apuntes Packet Tracer](Apuntes%20Packet%20Tracer.md): Apunte con todo lo necesario para rendir el primera parcial de laboratorio con Packet Tracer.
-- [Checkpoints Parcial Lab](Checkpoints%20Parcial%20Lab.md): Una orientación macro de todos los objetivos necesarios para el primer parcial de laboratorio.
-- [Filtros Utiles Wireshark.md](Filtros%20Utiles%20Wireshark.md): Filtros útiles para el segundo parcial de laboratorio con Wireshark.
+#### 1)  Configuración de IKE. 
+“Internet Key Exchange” es un protocolo que define el método de intercambio de claves sobre IP en una primera fase de negociación segura. Está formado por una cabecera de autenticación (AH) o una cabecera de autenticación más cifrado (Encapsulating Security Payload o ESP).
+```
+conf t
+crypto isakmp policy 10
+encr AES
+authentication pre-share
+group 5 (Diffie-Hellman grupo 5 – clave de 1536 bits)
+lifetime 900 (tiempo de vida en segundos)
+exit
+```
+Notas técnicas:
+```ads
+•  crypto isakmp policy 10: este comando crea la política ISAKMP número 10. Puede crear varias políticas,  por  ejemplo  7,  8,  9  con  una  configuración  diferente. Los  routers  que  participan  en  la negociación de la Fase 1 buscan la coincidencia de políticas ISAKMP con la lista de políticas una por una. Si alguna política coincide, la negociación de IPSec pasa a la Fase 2.
+•  encr AES: se utilizará el algoritmo AES para la fase 1.
+•  authentication pre-share: el método de autenticación es una clave pre-compartida.
+•  group 5: el grupo Diffie-Hellman que se utilizará es el 5 (grupo de 1536 bits).
+Los grupos Diffie-Hellman (DH) determinan la fuerza de la clave usada en el proceso de intercambio de claves. Los miembros de grupos más altos (DF 14, 15, 19 y 20)son más seguros, pero se necesita más tiempo para computar la clave. Ambos puntos en un intercambio de VPN deben usar el mismo grupo DH, que es negociado durante la Fase 1 del proceso de negociación de IPSec. Es ahí donde los dos puntos forman un canal seguro y autenticado que pueden usar para comunicarse.
+•  lifetime 900: tiempo de vida en segundos.
+```
+
+##### Definición de una clave simétrica con el otro extremo del túnel:
+```
+crypto isakmp key cisco address 10.2.0.2
+```
+(La contraseña de la fase 1 es “cisco” y la dirección IP remota es 10.2.0.2)
+
+#### 2)  Configuración de IPSec modo túnel
+```
+crypto ipsec transform-set 50 ah-sha-hmac esp-3des
+```
+
+(Para listar las otras opciones de autenticación y encriptación utilice el comando crypto ipsec transform-set 50 ?)
+
 
 ---
 despues de conectarlas
@@ -28,6 +59,7 @@ ip address 10.50.0.1 255.255.0.0
 exit
 ```
 
+en `ip address` recibe *default gateway* y *mascara de subred*
 ###### configuración de la segunda sub-interfaz, la de vlan 10, desde (config)
 ```
 interface fastEthernet0/0.10
@@ -70,7 +102,10 @@ ip route 0.0.0.0 0.0.0.0 10.1.0.1
 exit
 ```
 
+
+
 el objetivo de sumarizar redes es achicar la tabla de ruteo
+
 
 en Router2 para ver la configuracion si tiene eigrp 1
 
@@ -78,6 +113,7 @@ se hace  en enable
 ```
 show run
 ```
+
 
 en Router1
 al hacer show ip route (en modo enable) ver el eigrp,
@@ -87,6 +123,9 @@ router eigrp 1
 network 10.0.0.0
 exit
 ```
+
+
+
 
 ----
 para ver como esta armado el túnel
@@ -329,6 +368,8 @@ end
 ```
 
 
+
+
  en  Router 1, modo (conf t)
 ```
 conf t
@@ -365,43 +406,3 @@ de esta forma lo que no esta permitido, va estar denegado, no va a tener otro tr
 
  quedaría mas o menos parecido asi:
  ![[TL 4 Pasted image 20241122132245.png]]
- 
-
----
- 
- # pdf de TL4 
-
-#### 1)  Configuración de IKE. 
-“Internet Key Exchange” es un protocolo que define el método de intercambio de claves sobre IP en una primera fase de negociación segura. Está formado por una cabecera de autenticación (AH) o una cabecera de autenticación más cifrado (Encapsulating Security Payload o ESP).
-```
-conf t
-crypto isakmp policy 10
-encr AES
-authentication pre-share
-group 5 (Diffie-Hellman grupo 5 – clave de 1536 bits)
-lifetime 900 (tiempo de vida en segundos)
-exit
-```
-Notas técnicas:
-```pkg
-•  crypto isakmp policy 10: este comando crea la política ISAKMP número 10. Puede crear varias políticas,  por  ejemplo  7,  8,  9  con  una  configuración  diferente. Los  routers  que  participan  en  la negociación de la Fase 1 buscan la coincidencia de políticas ISAKMP con la lista de políticas una por una. Si alguna política coincide, la negociación de IPSec pasa a la Fase 2.
-•  encr AES: se utilizará el algoritmo AES para la fase 1.
-•  authentication pre-share: el método de autenticación es una clave pre-compartida.
-•  group 5: el grupo Diffie-Hellman que se utilizará es el 5 (grupo de 1536 bits).
-Los grupos Diffie-Hellman (DH) determinan la fuerza de la clave usada en el proceso de intercambio de claves. Los miembros de grupos más altos (DF 14, 15, 19 y 20)son más seguros, pero se necesita más tiempo para computar la clave. Ambos puntos en un intercambio de VPN deben usar el mismo grupo DH, que es negociado durante la Fase 1 del proceso de negociación de IPSec. Es ahí donde los dos puntos forman un canal seguro y autenticado que pueden usar para comunicarse.
-•  lifetime 900: tiempo de vida en segundos.
-```
-
-##### Definición de una clave simétrica con el otro extremo del túnel:
-```
-crypto isakmp key cisco address 10.2.0.2
-```
-(La contraseña de la fase 1 es “cisco” y la dirección IP remota es 10.2.0.2)
-
-#### 2)  Configuración de IPSec modo túnel
-```
-crypto ipsec transform-set 50 ah-sha-hmac esp-3des
-```
-
-(Para listar las otras opciones de autenticación y encriptación utilice el comando crypto ipsec transform-set 50 ?)
-

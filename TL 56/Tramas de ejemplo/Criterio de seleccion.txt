@@ -1,0 +1,16 @@
+Preguntas 1 y 2, con archivo de zip "Preguntas 1 y 2 ...".
+Preguntas 1 y 2, con archivo de zip "Pregunta 3".
+
+El número de archivo .pcap que elegís es el último número de tu legajo. 
+El número de trama que elegís, es de los 2 números anteriores al guión.
+Si no existiera el número de trama que te toca, tomás los 2 primeros números de tu legajo para elegir otra. 
+
+Ejemplo: 
+Legajo 123456-7
+Archivo 7.pcap
+Trama 56
+Si no hay trama 56 en el archivo, usar la 12.
+
+Parcial de Noviembre de 2022
+
+

@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "16def5c6e0f4ddeb",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d63da10c9ae3bbc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fbbac9525b0588f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NOTAS TL4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NOTAS TL4"
+            }
+          },
+          {
+            "id": "951afbcc55a51eaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fd930d0146a07072",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f94a6c6a7627a2a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4531331957ae70f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "c7e26ce96ace602e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "1e4ad04aace58a0c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dd11bdf9f8bf8a24",
+    "type": "split",
+    "children": [
+      {
+        "id": "69edf6f53f462bb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b98e7b2242110d01",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TL 4 mio/TL4-con vlans armado.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de TL4-con vlans armado"
+            }
+          },
+          {
+            "id": "752c21db47a20444",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TL 4 mio/TL4-con vlans armado.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de TL4-con vlans armado"
+            }
+          },
+          {
+            "id": "c77fa7830517a8a1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "ec83a2cbfe8d11d1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TL 4 mio/TL4-con vlans armado.md"
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de TL4-con vlans armado"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "951afbcc55a51eaa",
+  "lastOpenFiles": [
+    "Apuntes Packet Tracer.md",
+    "TL 4 mio/TL4-con vlans armado.md",
+    "TL 4 mio/TL-4.md",
+    "TL 4 mio/quitar2.png",
+    "TL 4 mio/quitar.png",
+    "TL 4 mio/Pasted image 20241128172227.png",
+    "TL 4 mio/Pasted image 20241128170640.png",
+    "TL 4 mio/Pasted image 20241128170445.png",
+    "TL 4 mio/Pasted image 20241128164242.png",
+    "TL 4 mio/Pasted image 20241128163433.png",
+    "TL 4 mio/Pasted image 20241128153814.png",
+    "TL 4 mio/Pasted image 20241128151043.png",
+    "TL 4 mio/Pasted image 20241128142418.png",
+    "TL 4 mio/spanning tree estados/despues.md",
+    "TL 4 mio/spanning tree estados/antes.md",
+    "TL 4 mio/spanning tree estados",
+    "TL 4 mio/capturas",
+    "TL 4 mio",
+    "Nueva carpeta",
+    "TL 1234/regional B con ambos modos/2022 - Evaluación TL1234 - Resuelto - Regional B - 16 17 18/Eval_1234 temas ABC 2022-2 - 6b - Modo router - FIN EXITOSO.pkt",
+    "TL 1234/regional B con ambos modos/2022 - Evaluación TL1234 - Resuelto - Regional B - 16 17 18/Eval_1234 temas ABC 2022-2 - 6a Modo bridge vlan 2 - FIN EXITOSO.pkt",
+    "TL 1234/regional B con ambos modos/2022 - Evaluación TL1234 - Resuelto - Regional B - 16 17 18/consigna NTM.pdf - Acceso directo.lnk",
+    "TL 1234/regional B con ambos modos/2022 - Evaluación TL1234 - Consigna parcial/Eval_1234 temas ABC 2022-2 SIT_INICIAL.pkt",
+    "TL 1234/regional B con ambos modos/2022 - Evaluación TL1234 - Consigna parcial/Eval_1234 temas ABC 2022-2 Enunciado.pdf",
+    "TL 1234/regional B con ambos modos/2022 - Evaluación TL1234 - Resuelto - Regional B - 16 17 18",
+    "TL 56/NACHO/2P Practica - copia.md",
+    "TL 56/NACHO/2P Practica - copia 1.md",
+    "TL 56/TL65 práctica.md",
+    "2P Practica.md",
+    "NACHO/2P Practica - copia.md",
+    "NACHO/2P Practica - copia 1.md",
+    "Sin título.md",
+    "NOTAS TL4.md",
+    "Tramas de.md",
+    "TL65 práctica.md",
+    "README.md",
+    "Filtros Utiles Wireshark.md"
+  ]
+}
