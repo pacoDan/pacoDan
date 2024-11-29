@@ -254,7 +254,7 @@ Ingresar a la configuración de cada subinterfaz y aplicar la access list:
 ```
 ip access-group [idAccessList] in
 ```
-### Túnel IPsec
+### Túnel IPSec
 Primero, definir (y anotar) estos datos:
 - idCryptoPolicy (numero)
 - idTransformSet (numero)

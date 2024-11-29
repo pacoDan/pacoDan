@@ -47,7 +47,7 @@ Resolver:
 
 Testear:
 - Acceso de dispositivos de LAN a la WAN. Debe funcionar.
-## Checkpoint 5: Tunel IPSec
+## Checkpoint 5: Túnel IPSec
 Resolver:
 - Configurar el túnel IPSec en los dos router del extremo.
 - Asegurarse que la configuración sea IDÉNTICA en ambos routers. La única diferencia es que el extremo X referencia al Y, y viceversa.

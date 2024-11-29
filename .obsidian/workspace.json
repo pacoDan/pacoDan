@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Apuntes Packet Tracer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Apuntes Packet Tracer"
             }
           }
         ],
@@ -179,6 +179,12 @@
   },
   "active": "951afbcc55a51eaa",
   "lastOpenFiles": [
+    "Checkpoints Parcial Lab.md",
+    "Filtros Utiles Wireshark.md",
+    "README.md",
+    "NOTAS TL4.md",
+    "TL4-con vlans armado/readme.md",
+    "README 1.md",
     "Apuntes Packet Tracer.md",
     "TL 4 mio/TL4-con vlans armado.md",
     "TL 4 mio/TL-4.md",
@@ -211,10 +217,7 @@
     "NACHO/2P Practica - copia.md",
     "NACHO/2P Practica - copia 1.md",
     "Sin título.md",
-    "NOTAS TL4.md",
     "Tramas de.md",
-    "TL65 práctica.md",
-    "README.md",
-    "Filtros Utiles Wireshark.md"
+    "TL65 práctica.md"
   ]
 }
