@@ -1,5 +1,6 @@
 
-# Trama 
+# Trama 222
+
 03.pcapng
 trama 222
 ```
@@ -8,7 +9,6 @@ trama 222
 0020   6c 2c fe f2 01 bb e6 70 e1 7b 3f 37 06 be 50 10   l,.....p.{?7..P.
 0030   04 00 3b ee 00 00                                 ..;...
 ```
-
 
 - 0000 16 primeros bytes offset 0-15 : `90 f8 91 67 b5 db 20 6a 8a 3d 26 b4 08 00 45 00`
 - 0001 16 siguientes bytes offset 16-31: `00 28 cc 14 40 00 80 06 cd 64 c0 a8 00 15 34 6d`
@@ -21,7 +21,6 @@ El 45 00 en la primera línea indica el encabezado IPv4 y el 06 en la segunda l�
     - El segundo dígito (`5`) indica la longitud del encabezado en términos de palabras de 32 bits. En este caso, `5` significa que el encabezado tiene 5 palabras de 32 bits, lo que equivale a 20 bytes. Esto es el tamaño mínimo de un encabezado IPv4 sin opciones.
 2. **`00`**:
     - Este byte se refiere a la versión y el tamaño del encabezado, pero el segundo byte (`00`) es parte del campo de "Tipo de Servicio" (ToS) en el encabezado IPv4.
-
 - **`0800`**: Este valor se encuentra más adelante en el paquete y es el campo de tipo de protocolo en el encabezado Ethernet. Específicamente, `0800` indica que el protocolo de la capa superior es IPv4. En otras palabras, este valor se utiliza en el encabezado Ethernet para indicar que el contenido del paquete es un paquete IPv4. Indica que el protocolo de la capa superior es IPv4 en el contexto del encabezado Ethernet.
 ## Pregunta 1 (Trama 222)
 En relación con el Nivel 2 (TCP/IP). Trama 222 del 03.pcapng
@@ -135,7 +134,8 @@ TCP:
 La longitud total de la trama es de 54 bytes, que incluye todos los encabezados y los datos.
 
 
-# Resuelto
+----
+# Trama 18
 ### Capa 2 y 3
 - Tanda 1: 6 
 - Tanda 2: 10 
