@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -182,8 +182,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "4531331957ae70f4",
+  "active": "4aeb7ee418e470cd",
   "lastOpenFiles": [
+    "TL 1234/notitas que use en mi examen.md",
+    "README.md",
     "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL6-Análisis Protocolos Transporte y Aplic Red-v.Virtual - 2022.pdf",
     "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL6 - K4573 - muy bueno.pdf",
     "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL5-Análisis_tramas y paquetes-v.Virtual - 2022.pdf",
@@ -194,9 +196,7 @@
     "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL4- K4053 - Correccion profe.txt",
     "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL3-Conf_Básica_Routers-2022.pdf",
     "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL2-WLAN-2022.pdf",
-    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL3 - K4053 - muy bueno.pkt",
     "Apuntes Packet Tracer.md",
-    "README.md",
     "Filtros Utiles Wireshark.md",
     "TL 1234/material y extras/parcial TL1234 resuelto/direccionamiento.jpg",
     "TL 1234/material y extras/parcial TL/direccionamiento.jpg",
