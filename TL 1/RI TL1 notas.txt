@@ -1,0 +1,4 @@
+802 1Q que es etiquetado de VLAN, le agrega 4 vytes al ethernet, que significa confuigurarlas en modo troncal y no modo objeto
+
+Los switch ejecutan el proptocolos spanning tree que arme el arbool y no un bucle
+

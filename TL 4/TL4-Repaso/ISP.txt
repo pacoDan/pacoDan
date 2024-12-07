@@ -1,0 +1,13 @@
+ena
+conf t
+int f0/0
+description # Conecta a router 1 #
+ip add 100.1.1.1 255.255.255.0
+no shut
+int f0/1
+description # Conecta a Router 2 #
+ip add 200.1.1.1 255.255.255.0
+no shut
+exit
+end
+copy run start

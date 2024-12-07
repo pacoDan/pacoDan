@@ -1,0 +1,32 @@
+TL 4 
+IPSec : protocolo para hacer las VPN 
+	usa eigrp
+enrutamiento inter vlans
+segmentado- uan pc de una vlan no ve la otra pc de otra vlan 
+
+modo tunel Cifra todo el paquete
+
+subinterfaces: usa una interfzas isica, pero esa conexion fisica se divide para tener mas subinterfaces fisicas
+
+
+ahy que verificar el Acces list del Router 2
+
+
+
+
+Lista de control de acceso: filtro, donde se define un determiando trafico, las estandar y definida
+
+
+
+
+
+SSL es protocolo de capa 5
+
+
+
+show ip route :  ver la tabla de ruteo 
+
+
+
+el objetivo de sumarizar redes: es achicar la tabla de ruteo
+

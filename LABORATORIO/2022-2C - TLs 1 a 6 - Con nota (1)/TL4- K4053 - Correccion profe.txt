@@ -1,0 +1,1 @@
+No configuro las ACL's para filtrar el tráfico entre VLANs, es decir, hay comunicación entre las PC de las VLAN 10 y VLAN 20. No configuro la VLAN 50. No configuró la Ruta x Defecto

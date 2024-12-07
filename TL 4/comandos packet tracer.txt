@@ -1,0 +1,35 @@
+seleccionar la interface
+Switch(config)#interface fastEthernet 0/24
+entre routers
+Switch(config-if)#switchport mode trunk 
+
+al establecer nodo raiz ¿ y de paso usar la valn 20 para que?.. y arma el arbol de expansion
+Switch(config)#spanning-tree vlan 1,10,20 root primary 
+
+
+Router asocia la vlan 
+
+configuracion del default gateway de los equipos
+Router(config)#interface fastEthernet 0/0
+Router(config-if)#no shutdown  POR QUE SINO NO VAN FUNCIONAR LAS SUBINTERFACES
+Router(config-if)#exit
+
+ahora la priemera sub interface vlan 1
+Router(config)#interface fastEthernet 0/0.1
+Router(config-subif)#
+Router(config-subif)#encapsulation dot1Q 1
+Router(config-subif)#ip address 10.50.0.1 255.255.0.0
+								vlan 10
+Router(config)#interface fastEthernet 0/0.10
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 10.10.0.1
+Router(config-subif)#exit
+Router(config)#interface fastEthernet 0/0.10
+Router(config-subif)#ip address 10.10.0.1 255.255.0.0
+Router(config-subif)#exit
+Router(config)#interface fastEthernet 0/0.20
+Router(config-subif)#
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 10.20.0.1 255.255.0.0
+Router(config-subif)#exit
+Router(config)#
