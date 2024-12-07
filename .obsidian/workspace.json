@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TL 56/parcial TL56 ayer.md",
+                "file": "README.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c601140050ba2dc4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72d480e39b26ca26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apuntes Packet Tracer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "parcial TL56 ayer"
+              "title": "Apuntes Packet Tracer"
             }
           }
         ]
@@ -162,49 +182,52 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "4aeb7ee418e470cd",
+  "active": "4531331957ae70f4",
   "lastOpenFiles": [
-    "TL 56/TL65 práctica.md",
-    "TL 56/parcial TL56 ayer.md",
-    "TL 56/NACHO/2P Practica - copia 1.md",
-    "TL 56/MATERIAL DE APOYO Profe/EtherType codigos.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL6-Análisis Protocolos Transporte y Aplic Red-v.Virtual - 2022.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL6 - K4573 - muy bueno.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL5-Análisis_tramas y paquetes-v.Virtual - 2022.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL5 - 2022.rar",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL5 - K4573 - muy bueno.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL4- K4053 - suficiente.pkt",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL4-Conf_Avanz_Routers_VPN-2022.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL4- K4053 - Correccion profe.txt",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL3-Conf_Básica_Routers-2022.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL2-WLAN-2022.pdf",
+    "resuelto LABORATORIO utnianos/2022-2C - TLs 1 a 6 - Con nota (1)/TL3 - K4053 - muy bueno.pkt",
+    "Apuntes Packet Tracer.md",
     "README.md",
+    "Filtros Utiles Wireshark.md",
+    "TL 1234/material y extras/parcial TL1234 resuelto/direccionamiento.jpg",
+    "TL 1234/material y extras/parcial TL/direccionamiento.jpg",
+    "TL 1234/material y extras/TL 1234 regional A/direccionamiento.jpg",
+    "TL 1234/material y extras/regional B con ambos modos/2022 - Evaluación TL1234 - Consigna parcial/Instrucciones de realizacion.PNG",
+    "TL 1234/material y extras/regional A vlan 19 20 21/direccionamiento.jpg",
+    "TL 56/material y extras/NACHO/2P Practica - copia 1.md",
+    "TL 56/material y extras/NACHO/2P Practica - copia.md",
+    "TL 56/material y extras/TL65 práctica.md",
+    "TL 56/material y extras/parcial TL56 ayer.md",
+    "TL 5/material y extras/TL 5 Capturas/Captura desde 2024-05-31 21-37-54.png",
+    "TL 5/material y extras/TL 5 Capturas/Captura desde 2024-05-31 21-26-16.png",
+    "TL 5/material y extras/TL 5 Capturas/Captura desde 2024-05-31 21-19-23.png",
+    "TL 5/material y extras/TL 5 Capturas/Captura desde 2024-05-31 20-05-43.png",
+    "TL 5/material y extras/TL 5 Capturas/Captura desde 2024-05-31 19-47-19.png",
+    "TL 4/material y extras/TL4-con vlans armado/spanning tree estados/despues.md",
+    "TL 4/material y extras/TL4-con vlans armado/spanning tree estados/antes.md",
+    "TL 4/material y extras/TL4-con vlans armado/TL-4.md",
+    "TL 4/material y extras/TL4-con vlans armado/readme.md",
+    "TL 3/material y extras/TL3 asignar IPs.md",
+    "TL 4/extras/TL4-con vlans armado/spanning tree estados/despues.md",
+    "TL 4/extras/TL4-con vlans armado/spanning tree estados/antes.md",
+    "TL 4/extras/TL4-con vlans armado/TL-4.md",
+    "TL 4/extras/TL4-con vlans armado/readme.md",
+    "TL 3/extras/TL3 asignar IPs.md",
+    "Checkpoints Parcial Lab.md",
+    "TL 56/parcial TL56 ayer.md",
+    "TL 56/TL65 práctica.md",
+    "TL 56/NACHO/2P Practica - copia 1.md",
     "TL4-con vlans armado/readme.md",
     "TL3 asignar IPs/TL3.md",
-    "TL 4 Guía y recursos-20241121/GPUCache/index",
-    "TL 4 Guía y recursos-20241121/GPUCache/data_2",
-    "TL 4 Guía y recursos-20241121/GPUCache/data_3",
-    "TL 4 Guía y recursos-20241121/GPUCache/data_1",
-    "TL 4 Guía y recursos-20241121/DawnCache/data_2",
-    "TL 4 Guía y recursos-20241121/DawnCache/data_3",
-    "TL 4 Guía y recursos-20241121/GPUCache/data_0",
-    "TL 4 Guía y recursos-20241121/DawnCache/index",
-    "TL 4 Guía y recursos-20241121/DawnCache/data_1",
-    "TL 1234/regional A vlan 19 20 21/direccionamiento.jpg",
-    "Checkpoints Parcial Lab.md",
-    "Apuntes Packet Tracer.md",
-    "Filtros Utiles Wireshark.md",
-    "NOTAS TL4.md",
-    "README 1.md",
-    "TL 4 mio/TL4-con vlans armado.md",
-    "TL 4 mio/TL-4.md",
-    "TL 4 mio/quitar2.png",
-    "TL 4 mio/quitar.png",
-    "TL 4 mio/Pasted image 20241128172227.png",
-    "TL 4 mio/Pasted image 20241128170640.png",
-    "TL 4 mio/Pasted image 20241128170445.png",
-    "TL 4 mio/Pasted image 20241128164242.png",
-    "TL 4 mio/Pasted image 20241128163433.png",
-    "TL 4 mio/Pasted image 20241128153814.png",
-    "TL 4 mio/Pasted image 20241128151043.png",
-    "TL 4 mio/spanning tree estados/despues.md",
-    "TL 4 mio/spanning tree estados/antes.md",
-    "TL 56/NACHO/2P Practica - copia.md",
-    "2P Practica.md",
-    "NACHO/2P Practica - copia.md",
-    "NACHO/2P Practica - copia 1.md",
-    "Sin título.md",
-    "Tramas de.md",
-    "TL65 práctica.md"
+    "NOTAS TL4.md"
   ]
 }

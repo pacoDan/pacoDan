@@ -1,7 +1,3 @@
----
-modifiedDate: 2024-11-14T17:37:59-03:00
-createdDate: 2024-11-14T17:10:44-03:00
----
 Filtros útiles para el segundo parcial de laboratorio con Wireshark.
 Notas:
 - Todo va en minuscula siempre, no funciona en mayuscula.

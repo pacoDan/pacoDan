@@ -1,7 +1,3 @@
----
-createdDate: 2024-09-06T19:29:31-03:00
-modifiedDate: 2024-11-14T17:37:40-03:00
----
 Apunte con todo lo necesario para rendir el primera parcial de laboratorio con Packet Tracer.
 ## Utilidades
 
