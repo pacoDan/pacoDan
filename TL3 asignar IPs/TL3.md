@@ -17,7 +17,7 @@ no shutdown
 clock rate 20000000
 exit
 ```
- el clock rate debe tenerlo almenos un router
+ el clock rate debe tenerlo almenos un router de la red
 
 
 para ver la config  en modo enabled se hace `show ip route`
