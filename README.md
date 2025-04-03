@@ -35,12 +35,39 @@ sudo systemctl enable docker
 sudo systemctl restart docker
 newgrp docker
 ```
-### install temas e iconos mac desde:
+#### install temas e iconos mac desde:
 https://github.com/vinceliuice/WhiteSur-icon-theme
 https://github.com/vinceliuice/WhiteSur-gtk-theme ./install.sh -t all # instala todos los temas 
   ./tweaks.sh -f monterey
 https://github.com/vinceliuice/Mojave-gtk-theme 
 https://github.com/vinceliuice/WhiteSur-wallpapers ./install-wallpapers.sh
+### instalación de oh my zsh & p10k
+```
+chsh -s $(which zsh)
+```
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+```
+`nano ~/.zshrc`
+```
+plugins=(
+git
+zsh-syntax-highlighting
+zsh-autosuggestions
+)
+```
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL10K_MODE="nerdfont-complete"
+```
 ---
 # install nvim desde github (por lo tanto ultima version de nvim) EN ROOT
 ```sh
