@@ -34,13 +34,14 @@ sudo usermod -aG docker ${USER}
 sudo systemctl enable docker
 sudo systemctl restart docker
 newgrp docker
+```
 ### install temas e iconos mac desde:
 https://github.com/vinceliuice/WhiteSur-icon-theme
 https://github.com/vinceliuice/WhiteSur-gtk-theme ./install.sh -t all # instala todos los temas 
   ./tweaks.sh -f monterey
 https://github.com/vinceliuice/Mojave-gtk-theme 
 https://github.com/vinceliuice/WhiteSur-wallpapers ./install-wallpapers.sh
-```
+---
 # install nvim desde github (por lo tanto ultima version de nvim) EN ROOT
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/install_nvim.sh | bash
