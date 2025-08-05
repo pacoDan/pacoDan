@@ -23,7 +23,11 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
 ## Script de personalizacion (Arch Linux)
 ```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip neofetch screenfetch gettext gdb tree git curl wget vim openssh xclip xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste tilix nemo dolphin docker-compose timeshift redshift
+sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext gdb tree git curl wget vim openssh xclip xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste nemo dolphin docker-compose timeshift redshift
+```
+## Script de personalizacion (Arch Linux) SERVER
+```sh
+sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext vim nano gdb tree git curl wget openssh xclip xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste docker-compose timeshift
 ```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
