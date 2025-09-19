@@ -23,11 +23,15 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
 ## Script de personalizacion (Arch Linux)
 ```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext gdb tree git curl wget vim openssh docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste nemo dolphin docker-compose timeshift redshift
+sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext gdb tree git curl wget vim openssh docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste nemo dolphin docker-compose timeshift redshift obsidian
 ```
 ## Script de personalizacion (Arch Linux) SERVER
 ```sh
 sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext vim nano gdb tree git curl wget openssh xclip docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker gpaste docker-compose timeshift
+```
+```sh
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+yay -S --noconfirm  opera-developer zoom dropbox libappindicator-gtk3 google-chrome
 ```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script_arch.sh | bash
