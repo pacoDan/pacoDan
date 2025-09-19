@@ -18,6 +18,10 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 ```sh
 sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake vim nano ssh ufw unzip neofetch screenfetch gettext g++ tree gdb fd-find htop ncal curl git xsel xclip wl-clipboard ripgrep plank flameshot tilix
 ```
+flatpak:
+```sh
+flatpak install -y flathub com.google.Chrome com.opera.Opera com.obsproject.Studio com.visualstudio.code md.obsidian.Obsidian 
+```
 ```sh
 curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
@@ -29,6 +33,7 @@ sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettex
 ```sh
 sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext vim nano gdb tree git curl wget openssh xclip docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker gpaste docker-compose timeshift
 ```
+YAY
 ```sh
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 yay -S --noconfirm  opera-developer zoom dropbox libappindicator-gtk3 google-chrome
