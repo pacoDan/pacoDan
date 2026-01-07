@@ -16,7 +16,7 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 -->
 # Script de personalizacion (ubuntu y debian) ok
 ```sh
-sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake vim nano ssh ufw unzip neofetch screenfetch gettext g++ tree gdb fd-find htop ncal curl git xsel xclip wl-clipboard ripgrep plank flameshot tilix
+sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake vim nano ssh ufw unzip neofetch screenfetch gettext g++ tree gdb autoconf automake libtool fd-find htop ncal curl git xsel xclip wl-clipboard ripgrep plank flameshot tilix
 ```
 flatpak:
 ```sh
