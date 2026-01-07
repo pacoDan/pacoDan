@@ -27,11 +27,11 @@ curl -sS https://raw.githubusercontent.com/pacodan/pacodan/main/script.sh | bash
 ```
 ## Script de personalizacion (Arch Linux)
 ```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext gdb tree git curl wget vim openssh docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste nemo dolphin docker-compose timeshift redshift obsidian
+sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext gdb tree git curl wget vim openssh autoconf automake libtool docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker plank flameshot gpaste nemo dolphin docker-compose timeshift redshift obsidian
 ```
 ## Script de personalizacion (Arch Linux) SERVER
 ```sh
-sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext vim nano gdb tree git curl wget openssh xclip docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker gpaste docker-compose timeshift
+sudo pacman -S --noconfirm zsh gcc make cmake unzip fastfetch screenfetch gettext vim nano gdb tree git curl wget autoconf automake libtool openssh xclip  docker-buildx tree-sitter tree-sitter-lua tree-sitter-c tree-sitter-markdown tree-sitter-vim tree-sitter-vimdoc xsel wl-clipboard ripgrep fd lazygit htop docker gpaste docker-compose timeshift
 ```
 YAY
 ```sh
