@@ -14,9 +14,18 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvador/?originalSubdomain=es 
 -->
+## wsl 1 en windows desde powershell, en cmd se comenta con REM
+```sh
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+wsl.exe --set-default-version 1
+wsl.exe --list --online
+wsl --install -d Debian
+# opcional como segunda linea: ademas reiniciar despues de setear la version
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All -NoRestart
+```
 # Script de personalizacion (ubuntu y debian) ok
 ```sh
-sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake vim nano ssh ufw unzip neofetch screenfetch gettext g++ tree gdb autoconf automake libtool fd-find htop ncal curl git xsel xclip wl-clipboard ripgrep plank flameshot tilix
+sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake vim nano ssh ufw unzip screenfetch gettext g++ tree gdb autoconf automake libtool fd-find htop ncal curl net-tools apache2-utils git xsel xclip wl-clipboard ripgrep plank flameshot tilix neofetch
 ```
 flatpak:
 ```sh
