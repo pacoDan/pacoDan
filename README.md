@@ -31,6 +31,9 @@ sudo apt update && sudo apt upgrade && sudo apt autoremove
 ```sh
 sudo apt install -y --yes zsh ffmpeg libncurses-dev wget gcc make cmake vim nano ssh ufw unzip screenfetch gettext g++ tree gdb autoconf automake libtool fd-find htop ncal curl net-tools apache2-utils git xsel xclip wl-clipboard ripgrep plank flameshot tilix
 ```
+```sh
+sudo apt install -y --yes ssh  
+```
 flatpak:
 ```sh
 flatpak install -y flathub com.google.Chrome com.opera.Opera com.obsproject.Studio com.visualstudio.code md.obsidian.Obsidian 
