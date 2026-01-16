@@ -18,11 +18,14 @@ https://www.linkedin.com/pulse/decorar-perfil-de-github-con-readme-carlos-salvad
 ```sh
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 wsl.exe --set-default-version 1
-wsl-exe --update
+wsl.exe --update
 wsl.exe --list --online
 wsl --install -d Debian
 # opcional como segunda linea: ademas reiniciar despues de updatear
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All -NoRestart
+```
+```sh
+sudo apt update && sudo apt upgrade && sudo apt autoremove
 ```
 # Script de personalizacion (ubuntu y debian) ok
 ```sh
